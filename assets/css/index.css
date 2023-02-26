@@ -1,1 +1,143 @@
 @import url(../css/global.css);
+
+.header {
+    max-height: 6vh;
+    padding: 0.6% 2.5% 0 1%;
+    background-color: #020228;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    height: 4vh;
+}
+.header__logo img {
+    width: 100%;
+    height: 100%;
+}
+.header__sign {
+    width: 30%;
+    display: inline-flex;
+    justify-content: right;
+    align-items: center;
+    
+}
+.header__sign button {
+    padding: 2% 7%;
+    border-radius: 2rem;
+    color: white;
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+}
+#button2 {
+    background-color: #b535f6;
+}
+#button2:hover {
+    color: black;
+    background-color: white;
+}  
+
+.main {
+    background-color: #020228;
+}
+
+/*main 1o bloco*/
+.main__button {
+    height: 100vh;
+    margin: auto;
+    padding: 5%;
+    color: white;
+    text-align: center;
+    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite alternate;
+}
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+.main__button::before {
+    content: "";
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, #0f0f10, transparent);
+}
+.main__logos {
+    margin-top: 3%;
+    display: inline-flex;
+    justify-content: center;
+    gap: 6%;
+}
+.main__logos img {
+    object-fit: scale-down;
+}
+.main__text {
+    padding: 3%;
+}
+.main__text h1:first-child {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.main__text h1:nth-child(2) {
+    font-size: 3rem;
+}
+.main__bar {
+    width: 60%;
+    height: 5px;
+    margin: 3.5% auto;
+    background-image: linear-gradient(90deg, #5516ba, rgba(255, 0, 229, 0.5) 80%);
+}
+.main__text h3 {
+    font-size: 40px;
+}
+.main__text p:first-of-type {
+    font-size: 20px;
+}
+.main__text :is(span, p) {
+    font-size: 1rem;
+}
+.main__text button {
+    margin: 3% 0;
+    padding: 1.5% 4%;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    background-image: linear-gradient(45deg,
+    #9b34ef 0%,
+    #490cb0 50%);
+    color: white;
+    animation: vibrate 2.2s linear infinite;
+}
+@keyframes vibrate {
+    0% {transform: rotate(0);}
+    15% {transform: rotate(-15deg);}
+    20% {transform: rotate(10deg);}
+    25% {transform: rotate(-10deg);}
+    30% {transform: rotate(10deg);}
+    35% {transform: rotate(-10deg);}
+    40%, 100% {transform: rotate(0);}
+}
+.main__text button:hover {
+    background: transparent;
+    border: 1px solid #ff00e5;
+}
+
+/* Custom Scroll */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #b535f6;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #ff00e5;
+}

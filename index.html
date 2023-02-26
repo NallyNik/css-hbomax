@@ -9,27 +9,30 @@
 </head>
 <body>
     <header class="header">
-        <a class="header__logo"href="index.html"><img src="./assets/images/hbo-logo.svg" alt=""></a>
+        <a class="header__logo" href="index.html"><img src="./assets/images/hbo-logo.svg" alt=""></a>
         <div class="header__sign">
-            <a href="signIn.html">ENTRAR</a>
-            <a href="#assinatura">ASSINE AGORA</a>
+            <button type="menu" name="singn" onclick="window.location.href='./signIn.html'">ENTRAR</button>
+            <button id="button2" type="menu" name="assinatura" onclick="window.location.href='#assinatura'">ASSINE AGORA</button>
         </div>
     </header>
     <main class="main">
         <section class="main__button">
-            <figure>
+            <figure class="main__logos">
                 <img src="./assets/images/hbo.png" alt="HBO">
                 <img src="./assets/images/dc.png" alt="DC">
                 <img src="./assets/images/wb.png" alt="WB">
                 <img src="./assets/images/cartoon-network_neutral.png" alt="CN">
                 <img src="./assets/images/max_originals.png" alt="MAX">
             </figure>
-            <h1>CURTA AS MELHORES HISTÓRIAS</h1>
-            <h1>PARA TODO MUNDO</h1> 
-            <h5>Assinaturas a partir de</h5>
-            <h3>R$14,15 /mês*</h3>
-            <a href="#assinatura" class="button">ASSINE AGORA</a>
-            <p><sup>*</sup>aplicável ao plano anual com o pagamento antecipado.</p>
+            <div class="main__text">
+                <h1>CURTA AS MELHORES HISTÓRIAS</h1>
+                <h1>PARA TODO MUNDO</h1>
+                <div class="main__bar"></div>
+                <p>Assinaturas a partir de</p>
+                <h3>R$14,15 <span>/mês*</span></h3>
+                <button type="button" onclick="window.location.href='#assinatura'">ASSINE AGORA</button>
+                <p>*aplicável ao plano anual com o<br> pagamento antecipado.</p>
+            </div> 
         </section>
         <section class="main__plans" id="assinatura">
             <h4>Conheça nossos planos e economize na assinatura trimestral ou anual com o pagamento antecipado.</h4>
