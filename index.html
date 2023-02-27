@@ -17,6 +17,7 @@
     </header>
     <main class="main">
         <section class="main__button">
+            <div class="main__gradient"></div>
             <figure class="main__logos">
                 <img src="./assets/images/hbo.png" alt="HBO">
                 <img src="./assets/images/dc.png" alt="DC">
@@ -36,21 +37,23 @@
         </section>
         <section class="main__plans" id="assinatura">
             <h4>Conheça nossos planos e economize na assinatura trimestral ou anual com o pagamento antecipado.</h4>
-            <div>
-                <div class="main__card">
+            <div class="main__cards">
+                <div class="main__card card--left">
                     <span>Mobile</span>
-                    <span>R$ 19,90 /mês</span>
+                    <span>R$ 19,90</span>
+                    <span> /mês</span>
                     <ul>
                         <li>Aproveite em smartphones e tablets, onde quiser.</li>
                         <li>Assista em 1 tela por vez.</li>
                         <li>Tenha conteúdo em resolução adaptada para cada dispositivo.</li>
                         <li>Baixe suas séries e filmes favoritos, assista onde e quando quiser.</li>
                     </ul>
-                    <a href="#" class="button">ESCOLHER O PLANO MOBILE</a>
+                    <button type="button" onclick="'#'">ESCOLHER O PLANO MOBILE</button>
                 </div>
-                <div class="main__card">
+                <div class="main__card card--right">
                     <span>Multitelas</span>
-                    <span>R$ 27,90 /mês</span>
+                    <span>R$ 27,90</span>
+                    <span> /mês</span>
                     <ul>
                         <li>Aproveite em todos os seus dispositivos.</li>
                         <li>Chromecast e Airplay disponíveis.</li>
@@ -59,46 +62,36 @@
                         <li>Baixe suas séries e filmes favoritos, assista onde e quando quiser.</li>
                         <li>Crie até 5 perfis diferentes.</li>
                     </ul>
-                    <a href="#" class="button">ESCOLHER O PLANO MULTITELAS</a>
+                    <button type="button" onclick="'#'">ESCOLHER O PLANO MULTITELAS</button>
                 </div>
             </div>
         </section>
         <section class="main__channels">
             <h4>Descubra novos universos</h4>
-            <div class="main__channel">
-                <figure title="HBO">
-                    <img src="./assets/images/hbo-default_0.webp" alt="">
-                    <img src="./assets/images/hbo-hover_0.webp" alt="">
+            <div class="channels__grid-channel">
+                <figure class="channels__channel" title="HBO">
+                    <img class="channel__front-img" src="./assets/images/hbo-default_0.webp" alt="">
+                    <img class="channel__img-hover" src="./assets/images/hbo-hover_0.webp" alt="">
                 </figure>
-            </div>
-            <div class="main__channel">
-                <figure title="MAX Origunals">
-                    <img src="./assets/images/MAX-Default.webp" alt="">
-                    <img src="./assets/images/MAX-Hover.webp" alt="">
+                <figure class="channels__channel" title="MAX Origunals">
+                    <img class="channel__front-img" src="./assets/images/MAX-Default.webp" alt="">
+                    <img class="channel__img-hover" src="./assets/images/MAX-Hover.webp" alt="">
+                </figure>    
+                <figure class="channels__channel" title="DC">
+                    <img class="channel__front-img" src="./assets/images/DC_Default.webp" alt="">
+                    <img class="channel__img-hover" src="./assets/images/DC-Hover.webp" alt="">
                 </figure>
-            </div>
-            <div class="main__channel">
-                <figure title="DC">
-                    <img src="./assets/images/DC_Default.webp" alt="">
-                    <img src="./assets/images/DC-Hover.webp" alt="">
+                <figure class="channels__channel" title="WB">
+                    <img class="channel__front-img" src="./assets/images/WB-Default.webp" alt="">
+                    <img class="channel__img-hover" src="./assets/images/WB-Hover.webp" alt="">
                 </figure>
-            </div>
-            <div class="main__channel">
-                <figure title="WB">
-                    <img src="./assets/images/WB-Default.webp" alt="">
-                    <img src="./assets/images/WB-Hover.webp" alt="">
+                <figure class="channels__channel" title="Cartoon Network">
+                    <img class="channel__front-img" src="./assets/images/CN-Default.webp" alt="">
+                    <img class="channel__img-hover" src="./assets/images/CN-Hover.png" alt="">
                 </figure>
-            </div>
-            <div class="main__channel">
-                <figure title="Cartoon Network">
-                    <img src="./assets/images/CN-Default.webp" alt="">
-                    <img src="./assets/images/CN-Hover.png" alt="">
-                </figure>
-            </div>
-            <div class="main__channel">
-                <figure title="Champions League">
-                    <img src="./assets/images/UCL-Default.webp" alt="">
-                    <img src="./assets/images/UCL-Hover.webp" alt="">
+                <figure class="channels__channel" title="Champions League">
+                    <img class="channel__front-img" src="./assets/images/UCL-Default.webp" alt="">
+                    <img class="channel__img-hover" src="./assets/images/UCL-Hover.webp" alt="">
                 </figure>
             </div>
         </section>
