@@ -12,56 +12,68 @@
         <a class="header__logo" href="index.html"><img src="./assets/images/hbo-logo.svg" alt=""></a>
         <div class="header__sign">
             <button type="menu" name="singn" onclick="window.location.href='./signIn.html'">ENTRAR</button>
-            <button id="button2" type="menu" name="assinatura" onclick="window.location.href='#assinatura'">ASSINE AGORA</button>
+            <button id="button2" type="menu" name="subscription" onclick="window.location.href='#subscription'">ASSINE AGORA</button>
         </div>
     </header>
     <main class="main">
-        <section class="main__button">
-            <div class="main__gradient"></div>
-            <figure class="main__logos">
+        <section class="main__start">
+            <div class="start__gradient"></div>
+            <figure class="start__logos">
                 <img src="./assets/images/hbo.png" alt="HBO">
                 <img src="./assets/images/dc.png" alt="DC">
                 <img src="./assets/images/wb.png" alt="WB">
                 <img src="./assets/images/cartoon-network_neutral.png" alt="CN">
                 <img src="./assets/images/max_originals.png" alt="MAX">
             </figure>
-            <div class="main__text">
+            <div class="start__text">
                 <h1>CURTA AS MELHORES HISTÓRIAS</h1>
                 <h1>PARA TODO MUNDO</h1>
-                <div class="main__bar"></div>
+                <div class="start__bar"></div>
                 <p>Assinaturas a partir de</p>
                 <h3>R$14,15 <span>/mês*</span></h3>
-                <button type="button" onclick="window.location.href='#assinatura'">ASSINE AGORA</button>
+                <button type="button" onclick="window.location.href='#subscription'">ASSINE AGORA</button>
                 <p>*aplicável ao plano anual com o<br> pagamento antecipado.</p>
             </div> 
         </section>
-        <section class="main__plans" id="assinatura">
+        <section class="main__plans" id="subscription">
             <h4>Conheça nossos planos e economize na assinatura trimestral ou anual com o pagamento antecipado.</h4>
-            <div class="main__cards">
-                <div class="main__card card--left">
-                    <span>Mobile</span>
-                    <span>R$ 19,90</span>
-                    <span> /mês</span>
-                    <ul>
-                        <li>Aproveite em smartphones e tablets, onde quiser.</li>
-                        <li>Assista em 1 tela por vez.</li>
-                        <li>Tenha conteúdo em resolução adaptada para cada dispositivo.</li>
-                        <li>Baixe suas séries e filmes favoritos, assista onde e quando quiser.</li>
-                    </ul>
+            <div class="plans__cards">
+                <div class="plans__card">
+                    <div>
+                        <div class="card__text">
+                            <span>Mobile</span>
+                            <div>
+                                <span class="card__price">R$ 19,90</span>
+                                <span> /mês</span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Aproveite em smartphones e tablets, onde quiser.</li>
+                            <li>Assista em 1 tela por vez.</li>
+                            <li>Tenha conteúdo em resolução adaptada para cada dispositivo.</li>
+                            <li>Baixe suas séries e filmes favoritos, assista onde e quando quiser.</li>
+                        </ul>
+                    </div>
                     <button type="button" onclick="'#'">ESCOLHER O PLANO MOBILE</button>
                 </div>
-                <div class="main__card card--right">
-                    <span>Multitelas</span>
-                    <span>R$ 27,90</span>
-                    <span> /mês</span>
-                    <ul>
-                        <li>Aproveite em todos os seus dispositivos.</li>
-                        <li>Chromecast e Airplay disponíveis.</li>
-                        <li>Assista em até 3 telas ao mesmo tempo.</li>
-                        <li>Tenha conteúdo em alta definição, com qualidade 4K.</li>
-                        <li>Baixe suas séries e filmes favoritos, assista onde e quando quiser.</li>
-                        <li>Crie até 5 perfis diferentes.</li>
-                    </ul>
+                <div class="plans__card">
+                    <div>
+                        <div class="card__text">
+                            <span>Multitelas</span>
+                            <div>
+                                <span class="card__price">R$ 27,90</span>
+                                <span> /mês</span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Aproveite em todos os seus dispositivos.</li>
+                            <li>Chromecast e Airplay disponíveis.</li>
+                            <li>Assista em até 3 telas ao mesmo tempo.</li>
+                            <li>Tenha conteúdo em alta definição, com qualidade 4K.</li>
+                            <li>Baixe suas séries e filmes favoritos, assista onde e quando quiser.</li>
+                            <li>Crie até 5 perfis diferentes.</li>
+                        </ul>
+                    </div>
                     <button type="button" onclick="'#'">ESCOLHER O PLANO MULTITELAS</button>
                 </div>
             </div>

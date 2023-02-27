@@ -38,6 +38,7 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
 }
 .header__logo {
     height: 4vh;
