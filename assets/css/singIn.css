@@ -31,7 +31,7 @@ main {
     background: rgba(0, 0, 0, 0.158);
     color: white;
 }
-.sign__form input:invalid {
+.sign__form input:required:not(:placeholder-shown):invalid {
     border: 2px solid red;
 }
 ::placeholder {
@@ -39,4 +39,7 @@ main {
 }
 .form__button a:nth-child(2) {
     padding-left: 3%;
+}
+.sign__form:invalid button{
+    cursor: not-allowed;
 }
