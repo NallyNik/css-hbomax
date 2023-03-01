@@ -172,9 +172,36 @@
     z-index: 1;
 }
 
-
-
-
+@media (max-width: 1000px) {
+    .main__start, .main__plans, .main__channels {
+        height: fit-content;
+    }
+    .plans__card {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 800px) {
+    .plans__cards {
+        flex-direction: column;
+    }
+    .channels__grid-channel {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1%;
+    }
+    .channels__channel {
+        height: 70vh;
+    }
+}
+@media (max-width: 500px) {
+    .plans__cards {
+        flex-direction: column;
+    }
+    .channels__grid-channel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 
 

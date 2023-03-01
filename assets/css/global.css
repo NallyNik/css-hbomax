@@ -107,3 +107,10 @@ a:hover {
 ::-webkit-scrollbar-thumb:hover {
     background: #ff00e5;
 }
+
+@media (max-width: 1000px) {
+    .footer__anchor ul {
+        width: 80%;
+        font-size: small;
+    }
+}
