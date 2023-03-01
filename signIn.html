@@ -11,11 +11,24 @@
     <header class="header">
         <a class="header__logo" href="index.html"><img src="./assets/images/hbo-logo.svg" alt=""></a>
         <div class="header__sign">
-            <button type="menu" name="singn" onclick="window.location.href='./signIn.html'">ENTRAR</button>
-            <button id="button2" type="menu" name="assinatura" onclick="window.location.href='#assinatura'">ASSINE AGORA</button>
+            <button type="menu" name="sign" onclick="window.location.href='./signIn.html'">ENTRAR</button>
+            <button id="button2" type="menu" name="subscription" onclick="window.location.href='#assinatura'">ASSINE AGORA</button>
         </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+        <section class="main__sign">
+            <h1>ENTRAR</h1>
+            <form action="POST" class="sign__form">
+                <label for="email">Você tem uma conta da HBO Max?</label>
+                <input type="email" name="email" id="email" placeholder="Endereço de e-mail" required>
+                <input type="password" name="password" id="password" minlength="7" maxlength="15" placeholder="Senha" required>
+                <div class="form__button">
+                    <button type="submit">ENTRAR</button>
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+            </form>
+        </section>
+    </main>
     <footer class="footer">
         <nav class="footer__anchor">
             <ul>

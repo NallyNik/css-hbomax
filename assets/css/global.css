@@ -6,9 +6,11 @@
     padding: 0;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
+    list-style: none;
 }
 body {
     background-color: #020228;
+    color: white;
 }
 p {
     font-family: 'Quicksand', sans-serif;
@@ -20,12 +22,21 @@ button {
     border-radius: 2rem;
     font-weight: bold;
     letter-spacing: 0.2rem;
-    background-image: linear-gradient(45deg, #9b34ef 0%, #490cb0 50%);
+    background: linear-gradient(45deg, #9b34ef 0%, #490cb0 50%);
     color: white;
+    transition: background 1s, border 1s, transform 1s;
 }
 button:hover {
     background: transparent;
-    border: 1px solid #ff00e5;
+    border: 2px solid #ff00e5;
+    transform: scale(1.1);
+}
+a {
+    color: #9e86ff;
+    font-weight: bold;
+}
+a:hover {
+        color: white;
 }
 
 /*Header*/
@@ -63,7 +74,7 @@ button:hover {
 }
 #button2:hover {
     color: black;
-    background-color: white;
+    background: white;
 }
 
 /*Footer*/
@@ -83,13 +94,6 @@ button:hover {
     color: #9e86ff;
     text-align: center;
     font-size: 12px;
-}
-.footer :link {
-    color: #9e86ff;
-    font-weight: bold;
-}
-.footer :link:hover {
-    color: white;
 }
 
 /* Custom Scroll */

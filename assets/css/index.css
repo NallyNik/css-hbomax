@@ -105,6 +105,9 @@
     background: linear-gradient(0deg, transparent, #3b1e63);
     transition: scale 1s ease, transform 1s ease-in-out;
 }
+.plans__card ::marker {
+    content: '+     ';  
+}
 .card__text {
     display: flex;
     justify-content: space-between;

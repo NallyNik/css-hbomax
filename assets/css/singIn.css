@@ -1,1 +1,42 @@
 @import url(../css/global.css);
+
+main {
+    padding: 5%;
+    background-image: url('../images/background-movies-series.png');
+    background-position: left;
+}
+.main__sign {
+    width: 70%;
+    height: 50vh;
+    margin: auto;
+    padding-top: 4%;
+    text-align: center;
+    background: linear-gradient(90deg, transparent, #3b1e6379);
+    border-radius: 0.5rem;
+}
+.sign__form {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.sign__form h1 {
+    margin-top: 15%;
+}
+.sign__form input {
+    margin: 2% 0 1%;
+    padding: 2%;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    background: rgba(0, 0, 0, 0.158);
+    color: white;
+}
+.sign__form input:invalid {
+    border: 2px solid red;
+}
+::placeholder {
+    font-size: 1rem;
+}
+.form__button a:nth-child(2) {
+    padding-left: 3%;
+}
